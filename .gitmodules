@@ -1,0 +1,6 @@
+[submodule "lib/gkeepapi"]
+	path = lib/gkeepapi
+	url = https://github.com/kiwiz/gkeepapi
+[submodule "lib/anylist"]
+	path = lib/anylist
+	url = https://github.com/codetheweb/anylist
