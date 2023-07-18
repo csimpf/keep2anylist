@@ -25,5 +25,6 @@ print(shopping_note.text)
 item_list = shopping_note.text[:shopping_note.text.index("Last update:")].split('\n')[:-1]
 
 # send item_list to lambda to update AnyList
-keep.sync()
 print(item_list)
+
+keep.sync()
