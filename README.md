@@ -1,7 +1,3 @@
-# This code isn't in a great state, but I have this public in case anybody else wants to see how this works and get it working for themselves. It's not well documented, but I have added some low-effort notes (see `lambda/README.md`) so it makes a little bit of sense. See the `lambda` directory for how the Lambda Functions can be structured. The rest of the code is here as reference, but at one point I just started programming in the AWS console and left this repo as-is.
-
-# Please create a PR or issue if you have any questions or need clarification 😊
-
 # keep2anylist
 
 Sync a Google Keep note with AnyList.
@@ -17,7 +13,7 @@ Uses two unofficial apps (thanks!):
 
 # Requirements
 
-Python 3.8
+Python 3.10
 Node 18
 
 # Setup
@@ -33,10 +29,16 @@ git submodule update --init
 ## Python
 
 ```bash
-pip install boto3 gkeepapi python-dotenv "urllib3<2"
+python3.10 -m pip install boto3 gkeepapi python-dotenv "urllib3<2"
 ```
 
 # Tips
+
+I have this public in case anybody else wants to see how this works and get it working for themselves.
+I have added some notes (see `lambda/README.md`) so it makes a little bit of sense. See the `lambda` directory for how the Lambda Functions can be structured.
+The rest of the code is here as reference, but at one point I just started programming in the AWS console and left this repo as-is.
+
+Please create a PR or issue if you have any questions or need clarification 😊
 
 ## Lambda Setup
 
