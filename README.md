@@ -2,7 +2,7 @@
 
 Sync a Google Keep note with AnyList.
 
-After Google Dropped API support for 3rd party list apps, using AnyList was such a part of my workflow that I wanted to figure out how to pull Google Keep items and move them to AnyList.
+After Google [Dropped API support](https://help.anylist.com/articles/google-assistant-overview/) for 3rd party list apps, using AnyList was such a part of my workflow that I wanted to figure out how to pull Google Keep items and move them to AnyList.
 
 There are two parts to this app - one gets details from a specified Google Keep list (keep-get/getKeep.py), and the other adds items to a specified AnyList app (anylist-post/index.js). I intend to put these in two AWS Lambda functions, run getKeep.py periodically (probably every hour), and make a POST request to the anylist function, so the code isn't exactly the same on Lambda but should get most of the way there. The Keep list is then cleared out.
 
