@@ -15,13 +15,19 @@ AWS `Layers` must be created and uploaded to each function for using the externa
 Install the following packages to a local directory with:
 
 ```
-pip install --target ./python boto3 gkeepapi python-dotenv "urllib3<2"
+pip install --target ./python -r requirements.txt
 ```
 
-Then create a zip file with the results to look like this:
+Then create a zip file:
+
+```bash
+zip -r packages python 
+```
+
+The results should look like this:
 
 ```
-python-lambda-layer.zip
+packages.zip
 └── python
     ├── __pycache__
     ├── bin

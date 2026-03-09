@@ -1,0 +1,4 @@
+boto3
+gkeepapi
+python-dotenv
+urllib3<2
